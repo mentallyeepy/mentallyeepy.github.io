@@ -1,16 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Verdana", sans-serif;
+  background: #0d4a82;
+    );
+}
+</style>
 
-<meta http-equiv="refresh" content="0; URL='https://mentallyeepy.github.io/site/Home.html'">
-<title>Redirecting...</title>
+<link rel="icon" type="image/x-icon" href="Content/index/favicon.ico">
 
-<link rel="icon" type="image/x-icon" href="/Content/index/favicon.ico">
+<style>
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
 
+.content-box {
+  background: #f5ffff;
+  border: 2px solid #006666;
+  padding: 16px;
+  box-shadow:
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #003333;
+}
+</style>
+
+<!--Button styles-->
+<style>
+  .custom-button {
+    background-color: #F0F0F0;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Tahoma';
+    cursor: pointer;
+  }
+  .custom-button:hover {
+    background-color: #E0E0E0;
+  }
+
+  .main-button {
+	  background-color: #e0e0e0;
+	  color: black;
+	  border: 2px outset #999;
+	  padding: 6px 14px;
+	  font-size: 14px;
+	  font-family: Tahoma, sans-serif;
+	  cursor: pointer;
+  }
+	.main-button:active {
+      border: 2px inset #999;
+  }
+	.main-button:hover {
+	  background-color: #D0D0D0;
+  }
+</style>
+
+<style>
+  /* Logo */
+.logo{
+    margin-bottom:25px;
+}
+
+.logo img{
+    width:300px;   /* adjust if needed */
+}
+
+/* Quick links */
+.links{
+    font-size:16px;
+}
+
+.links a{
+    color:#9fd3ff;
+    text-decoration:none;
+    margin:0 12px;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+/* Counter */
+.counter{
+    margin-top:40px;
+    font-size:14px;
+}
+
+</style>
+<title>Welcome</title>
 </head>
+
 <body>
-<p>If you are not redirected automatically, follow this <a href="https://mentallyeepy.github.io/site/Home.html">link</a>.</p>
-<img src="Content\index\nerd.webp">
+
+<div class="logo">
+<img src="Content/Logo(Transparent).png" alt="Graphic saying MentallyEepy">
+</div>
+
+<div class="links">
+<a href="Home.html">Home</a>
+<a href="About.html">About</a>
+<a href="Science.html">Science</a>
+<a href="Music.html">Music</a>
+</div>
+
+<div class="counter">
+Visitors: <span id="visitorCount">000000</span>
+</div>
+
+<script>
+let visits = localStorage.getItem("visits");
+
+if(!visits){
+visits = 0;
+}
+
+visits++;
+
+localStorage.setItem("visits", visits);
+
+document.getElementById("visitorCount").textContent =
+visits.toString().padStart(6,"0");
+</script>
+
 </body>
 </html>
