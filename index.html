@@ -92,11 +92,17 @@ body {
     font-size:14px;
 }
 
+.wrapper{
+    width:600px;
+    margin:120px auto;
+    text-align:center;
+}
 </style>
 <title>Welcome</title>
 </head>
 
 <body>
+<div class="wrapper">
 
 <div class="logo">
 <img src="Content/Logo(Transparent).png" alt="Graphic saying MentallyEepy">
@@ -127,6 +133,6 @@ localStorage.setItem("visits", visits);
 document.getElementById("visitorCount").textContent =
 visits.toString().padStart(6,"0");
 </script>
-
+</div>
 </body>
 </html>
