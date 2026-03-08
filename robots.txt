@@ -1,0 +1,7 @@
+# welcome to the robots.txt file buckaroo
+# hope you have fun not finding stuff lmao
+
+User-agent: *
+Disallow: /Content/Documents/
+Disallow: /Content/Music/
+Allow: /Content/
