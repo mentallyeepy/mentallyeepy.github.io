@@ -275,25 +275,31 @@ body {
 	
 <!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
 
+<script>
+  // Wait for the window to load so it finds the element correctly
+  window.onload = function() {
+    // 1. Get the current count from the browser's storage
+    let visits = localStorage.getItem("siteVisits");
+    
+    // 2. If it's the first time visiting, start at 0
+    if (visits === null) {
+      visits = 0;
+    }
+    
+    // 3. Increment the count (parseInt ensures it stays a number)
+    visits = parseInt(visits) + 1;
+    
+    // 4. Save the new number back to the browser
+    localStorage.setItem("siteVisits", visits);
+    
+    // 5. Update the number on the screen
+    const counterElement = document.getElementById("counter");
+    if (counterElement) {
+      // padStart(6, "0") keeps that cool 000042 look
+      counterElement.textContent = visits.toString().padStart(6, "0");
+    }
+  };
+</script>
+
 </body>
-
-	</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
