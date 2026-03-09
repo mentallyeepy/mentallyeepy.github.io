@@ -98,5 +98,20 @@ window.onload = function () {
 };
 </script>
 
+<!--Broh you better not try this :P-->
+<script>
+	let code = [];
+	let correct =
+		[38,38,40,40,37,39,37,39,66,65];
+
+	document.addEventListener("keydown", e => {
+		code.push(e.keyCode);
+		if(code.toString().indexOf(correct) >= 0){
+			alert("FISH MODE ACTIVATED");
+			document.body.style.transform = "rotate(180deg)";
+		}
+	});
+</script>
+	
 </body>
 </html>
