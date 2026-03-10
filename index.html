@@ -116,22 +116,33 @@ body {
 </div>
 
 <div class="counter">
-Visitors: <span id="visitorCount">000000</span>
+Visitors: <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
 </div>
 
 <script>
-let visits = localStorage.getItem("visits");
-
-if(!visits){
-visits = 0;
-}
-
-visits++;
-
-localStorage.setItem("visits", visits);
-
-document.getElementById("visitorCount").textContent =
-visits.toString().padStart(6,"0");
+  // Wait for the window to load so it finds the element correctly
+  window.onload = function() {
+    // 1. Get the current count from the browser's storage
+    let visits = localStorage.getItem("siteVisits");
+    
+    // 2. If it's the first time visiting, start at 0
+    if (visits === null) {
+      visits = 0;
+    }
+    
+    // 3. Increment the count (parseInt ensures it stays a number)
+    visits = parseInt(visits) + 1;
+    
+    // 4. Save the new number back to the browser
+    localStorage.setItem("siteVisits", visits);
+    
+    // 5. Update the number on the screen
+    const counterElement = document.getElementById("counter");
+    if (counterElement) {
+      // padStart(6, "0") keeps that cool 000042 look
+      counterElement.textContent = visits.toString().padStart(6, "0");
+    }
+  };
 </script>
 </div>
 </body>
