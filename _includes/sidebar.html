@@ -1,0 +1,18 @@
+<!-- Side navigation -->
+<div class="sidebar">
+  <a href="/index.html" {% if page.url == "/index.html" or page.url == "/" %}class="active"{% endif %}>Home</a>
+  <a href="/About.html" {% if page.url == "/About.html" %}class="active"{% endif %}>About</a>
+  <a href="/Blog.html" {% if page.url == "/Blog.html" %}class="active"{% endif %}>Blog</a>
+  <a href="/Gallery.html" {% if page.url == "/Gallery.html" %}class="active"{% endif %}>Gallery</a>
+  <a href="/Music.html" {% if page.url == "/Music.html" %}class="active"{% endif %}>Music</a>
+  <a href="/Music/Don Ellis Archive.html" {% if page.url == "/Music/Don Ellis Archive.html" %}class="active"{% endif %}>Archive</a>
+  
+  <div class="dropdown">
+    <a href="/Science.html" {% if page.url contains "/Science" %}class="active"{% endif %}>Science
+      <div class="dropdown-content">
+        <a href="/Science/Atom History.html" {% if page.url == "/Music.html" %}class="active"{% endif %}>Atom History</a>
+        <a href="/Science/Forensics.html" {% if page.url == "/Music.html" %}class="active"{% endif %}>Forensics</a>
+      </div>
+    </a>
+  </div>
+</div>
