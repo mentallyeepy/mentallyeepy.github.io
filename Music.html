@@ -27,7 +27,25 @@ layout: null
 	<h2>Imagine That (WIP)</h2>
 		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=bBDj34iTrXlzg8wP&amp;list=PLfzUM6lqzl1eIJ7ERMV0zoh2ccDIfiqca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 		</iframe>
-  </div>
+
+		<!--Site counter-->
+		<p style="font-family: Tahoma; font-size: 12px;">
+		Visitors:
+		<span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
+		</p>
+		
+		<script>
+		let visits = localStorage.getItem("siteVisits");
+		
+		if (!visits) visits = 0;
+		visits++;
+		
+		localStorage.setItem("siteVisits", visits);
+		
+		document.getElementById("counter").textContent =
+		visits.toString().padStart(6, "0");
+		</script>
+	</div>
 </div>
 </body>
 
