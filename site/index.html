@@ -3,15 +3,48 @@
 <head>
 <meta charset="UTF-8">
 
-<meta http-equiv="refresh" content="0; URL='https://mentallyeepy.github.io/'">
+<meta http-equiv="refresh" content="10; URL=https://mentallyeepy.github.io">
+
+<style>
+#showMe {
+    animation: delayedShow 0s 10s forwards;
+    visibility: hidden;
+}
+
+@keyframes delayedShow {
+    to { visibility: visible; }
+}
+</style>
+
 <title>Redirecting...</title>
 
 <link rel="icon" type="image/x-icon" href="/Content/index/favicon.ico">
 
 </head>
 <body>
-<p>If you are not redirected automatically, follow this <a href="https://mentallyeepy.github.io/">link</a>.</p><br>
-<p>Also nice, you found the old link. Better not use that anymore buckaroo.</p>
+    <p>Nice, you found the old link. Better not use that anymore buckaroo.</p>
+    <p>I will redirect you to the main site in <span id="timer">10</span> seconds</p><br>
+
+<div id="showMe">
+    <p>If you are not redirected automatically, follow this <a href="https://mentallyeepy.github.io/">link</a>.</p>
+</div>
+
 <img src="/Content/index/nerd.webp">
+
+<script>
+    let seconds = 10;
+    const display = document.querySelector('#timer');
+
+    const countdown = setInterval(() => {
+        seconds--;
+        display.textContent = seconds;
+        
+        if (seconds <= 0) {
+            clearInterval(countdown);
+            window.location.href = "https://mentallyeepy.github.io";
+        }
+    }, 1000); // 1000ms = 1 second
+</script>
+
 </body>
 </html>
