@@ -30,9 +30,7 @@ background-color: #000000;
 		<img src="\Content\gifs\underconstruction.gif">
 		<div class="button-row">
 			<div style="text-align: left;">
-				<a href="/Content/duckroll.png">
-				<button class="main-button">Home</button>
-				</a>
+				<button class="main-button" onclick="homePrank()">Home</button>
 				<a href="/Science.html">
 				<button class="main-button">Science</button>
 				</a>
@@ -43,9 +41,24 @@ background-color: #000000;
 
 <!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
 
+<script>
+// funny thing
+function homePrank() {
+    const chance = Math.random(); // Generates a number between 0 and 1
+    
+    if (chance < 0.70) {
+        // 70% chance: Go to the actual home page
+        window.location.href = "/Home.html";
+    } else {
+        // 30% chance: Get Duckrolled
+        window.location.href = "/Content/duckroll.jpg";
+    }
+}
+</script>
 </body>
 
 	</html>
+
 
 
 
