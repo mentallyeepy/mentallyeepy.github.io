@@ -183,3 +183,34 @@ body {
 		width: auto;
 		z-index: 10;
 	}
+
+/* For Gallery */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    border: 1px solid #006666;
+    padding: 5px;
+    margin: 0;
+    width: 200px; /* Adjust based on your N5110 screen size */
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 11px;
+    color: #333;
+    margin-top: 5px;
+    border-top: 1px dashed #ccc;
+    padding-top: 3px;
+}
