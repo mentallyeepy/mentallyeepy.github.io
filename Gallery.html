@@ -126,6 +126,29 @@ layout: null
   };
 </script>
 
+<!-- The Modal / Stage -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close-button">&times;</span>
+  <img class="modal-content" id="expandedImg">
+  <div id="captionText"></div>
+</div>
+<script>
+function enlargeImage(imgElement, caption) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("expandedImg");
+  var captionText = document.getElementById("captionText");
+
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+  captionText.innerHTML = caption;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+</script>
+	
 </body>
 </html>
 
