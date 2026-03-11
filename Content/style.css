@@ -137,6 +137,13 @@ body {
 
 /*button styles*/
 
+	.button-row {
+		display: flex;         /* The magic alignment spell */
+    	gap: 10px;            /* The "perfect" gap between buttons */
+    	align-items: center;  /* Keeps them level */
+    	margin-top: 10px;
+	}
+
   .custom-button {
     background-color: #F0F0F0;
     color: black;
