@@ -271,6 +271,7 @@ figcaption {
   top: 0;
   left: 100%; /* starts just off to the right */
   width: 300px;
+  z-index: 999;
 
   background-color: #d9eeee;
   border: 2px solid #006666;
