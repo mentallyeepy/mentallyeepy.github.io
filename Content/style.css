@@ -22,6 +22,7 @@ body {
   overflow: visible;
   border-right: 2px solid #006666;
   box-shadow: inset -1px 0 0 #ffffff;
+  z-index: 100;
 }
 
 /* Sidebar links */
@@ -273,7 +274,8 @@ figcaption {
   top: 0;
   left: 100%; /* starts just off to the right */
   width: 300px;
-  z-index: 999;
+  z-index: 9999;
+  pointer-events: none;
 
   background-color: #d9eeee;
   border: 2px solid #006666;
@@ -286,6 +288,7 @@ figcaption {
 
 /* Show on hover */
 .menu-item:hover .submenu {
+  pointer-events: auto;
   opacity: 1;
   transform: translateX(0);
 }
