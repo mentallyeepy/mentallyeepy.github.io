@@ -50,6 +50,8 @@ body {
 .content {
   margin-left: 220px;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .content-box {
