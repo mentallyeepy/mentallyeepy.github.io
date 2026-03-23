@@ -40,5 +40,14 @@ a {
   <p><a href="Home.html">go back home</a></p>
 </div>
 
+<script>
+  if (window.location.pathname.includes("fjoeisjoiefj")) {
+  document.body.innerHTML = `
+    <h1>välkommen till fel sida 🇸🇪</h1>
+    <p>du har gått vilse... detta är inte rätt plats</p>
+    <a href="Home.html">gå hem</a>
+  `;
+  }
+</script>
 </body>
 </html>
