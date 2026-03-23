@@ -76,6 +76,16 @@ layout: null
 </div>
 <!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
 
+<audio id="clickSound" src="/Content/click.wav" preload="auto"></audio>
+<script>
+const clickSound = document.getElementById("clickSound");
+
+document.addEventListener("click", function() {
+  clickSound.currentTime = 0; // rewind so it plays every time
+  clickSound.volume = 0.8;
+  clickSound.play();
+});
+</script>
 </body>
 
 	</html>
