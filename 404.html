@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/Content/index/favicon.ico">
 <title>404 - Not Found</title>
 
 <style>
@@ -40,14 +41,18 @@ a {
   <p><a href="Home.html">go back home</a></p>
 </div>
 
+<audio id="clickSound" src="/Content/c l i c k.wav" preload="auto"></audio>
 <script>
-  if (window.location.pathname.includes("fjoeisjoiefj")) {
-  document.body.innerHTML = `
-    <h1>välkommen till fel sida 🇸🇪</h1>
-    <p>du har gått vilse... detta är inte rätt plats</p>
-    <a href="Home.html">gå hem</a>
-  `;
-  }
+function playClick() {
+  const sound = new Audio("Content/sounds/click.mp3");
+  sound.volume = 0.3;
+  sound.play();
+}
+
+document.querySelectorAll("button, a").forEach(el => {
+  el.addEventListener("click", playClick);
+});
 </script>
+
 </body>
 </html>
