@@ -25,24 +25,37 @@ layout: null
         <h2>4osc</h2>
         <p>Coming Soon</p>
         <p>Find the Desmos version <a href="https://www.desmos.com/calculator/k5gm0oppbw" target="_blank">here.</a></p>
+		<p hidden>I like to move it move it</p>
+		<p></p>
 
-                    <!--Site counter-->
-                    <p style="font-family: Tahoma; font-size: 12px;">
-                    Visitors:
-                    <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
-                    </p>
+		<div class="button-row">
+			<div style="text-align: left;">
+				<a href="/Home.html">
+				<button class="main-button">Home</button>
+				</a>
+				<a href="/Music.html">
+				<button class="main-button">Music</button>
+				</a>
+			</div>
+		</div>
 
-                    <script>
-                    let visits = localStorage.getItem("siteVisits");
+        <!--Site counter-->
+        <p style="font-family: Tahoma; font-size: 12px;">
+            Visitors:
+            <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
+        </p>
 
-                    if (!visits) visits = 0;
-                    visits++;
+        <script>
+            let visits = localStorage.getItem("siteVisits");
 
-                    localStorage.setItem("siteVisits", visits);
+            if (!visits) visits = 0;
+            visits++;
 
-                    document.getElementById("counter").textContent =
-                    visits.toString().padStart(6, "0");
-    </script>
+            localStorage.setItem("siteVisits", visits);
+
+            document.getElementById("counter").textContent =
+            visits.toString().padStart(6, "0");
+        </script>
     </div>
 </div>
 
