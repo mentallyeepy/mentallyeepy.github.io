@@ -1,7 +1,7 @@
 <div class="sidebar">
   <a href="/Home" {% if page.url contains "/Home" %}class="active"{% endif %}>Home</a>
   <a href="/About" {% if page.url contains "/About" %}class="active"{% endif %}>About</a>
-  <a href="/Blog" {% if page.url contains "/Blog" %}class="active"{% endif %}>Blog</a>
+  <a href="/Blog" {% if page.url contains "/Blog" or page.url contains "/20" %}class="active"{% endif %}>Blog</a>
   <a href="/Gallery" {% if page.url contains "/Gallery" %}class="active"{% endif %}>Gallery</a>
   <div class="menu-item">
     <a href="/Music" {% if page.url contains "/Music" %}class="active"{% endif %}>Music</a>
