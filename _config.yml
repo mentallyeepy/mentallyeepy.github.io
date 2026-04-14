@@ -2,3 +2,4 @@ include: [".well-known"]
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
