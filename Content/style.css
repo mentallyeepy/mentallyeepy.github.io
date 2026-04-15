@@ -362,3 +362,34 @@ figcaption {
   opacity: 1;
   transform: translateX(0);
 }
+
+details {
+  margin-bottom: 10px;
+  border: 1px solid #006666;
+  background: #f5ffff;
+}
+
+summary {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #d9eeee;
+}
+
+summary:hover {
+  background: #99B9CC;
+}
+
+summary::marker {
+  content: "▸ ";
+}
+
+details[open] summary::marker {
+  content: "▾ ";
+}
+
+/* content inside */
+details p {
+  margin: 0;
+  padding: 8px 12px;
+}
