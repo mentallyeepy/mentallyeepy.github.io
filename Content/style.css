@@ -119,6 +119,10 @@ body.neon p {
   bottom: 20px;
   width: 100%;
 }
+.sidebar a:last-child {
+  border-top: 2px solid #006666;
+  margin-top: 10px;
+}
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
