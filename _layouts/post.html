@@ -16,7 +16,7 @@
 
     <h1>{{ page.title }}</h1>
     <p style="font-size: 12px; opacity: 0.7;">
-      {{ page.date | date: "%Y-%m-%d %H:%M" }}
+      {{ page.date | date: "%Y-%m-%d %H:%M" }} (UTC{{ page.date | date: "%z" }})
     </p>
 
     <hr>
