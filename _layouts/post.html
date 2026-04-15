@@ -53,5 +53,19 @@ document.addEventListener("click", function() {
 });
 </script>
 
+<script>
+function setTheme(theme) {
+  document.body.className = theme;
+  localStorage.setItem("theme", theme);
+}
+
+// load saved theme
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("theme");
+  if (saved) {
+    document.body.className = saved;
+  }
+});
+</script>
 </body>
 </html>
