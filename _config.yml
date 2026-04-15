@@ -3,3 +3,5 @@ include: [".well-known"]
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+
+timezone: America/Edmonton
