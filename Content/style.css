@@ -113,6 +113,13 @@ body.neon p {
   color: black;
 }
 
+/* Settings link */
+.settings-link {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
   margin-left: 220px;
