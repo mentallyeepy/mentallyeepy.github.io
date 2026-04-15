@@ -72,6 +72,72 @@ body {
     inset -1px -1px 0 #003333;
 }
 
+/* Dark Theme */
+body.dark {
+  background: #0b1a1a;
+  color: #e0ffff;
+  background-image: none;
+}
+
+body.dark .sidebar {
+  background-color: #102626;
+  border-right: 2px solid #00cccc;
+  box-shadow: none;
+}
+
+body.dark .sidebar a {
+  color: #ccffff;
+}
+
+body.dark .sidebar a:hover:not(.active) {
+  background-color: #1f4040;
+}
+
+body.dark .content-box {
+  background: #0f2a2a;
+  border: 2px solid #00cccc;
+  box-shadow: none;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark p {
+  color: #e0ffff;
+}
+
+/* Neon Theme */
+body.neon {
+  background: black;
+  color: #00ffcc;
+  background-image: none;
+}
+
+body.neon .sidebar {
+  background-color: #000;
+  border-right: 2px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+body.neon .sidebar a {
+  color: #00ffcc;
+}
+
+body.neon .sidebar a:hover {
+  background-color: #002222;
+}
+
+body.neon .content-box {
+  background: #001111;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 15px rgba(0,255,204,0.3);
+}
+
+body.neon h1,
+body.neon h2,
+body.neon p {
+  color: #00ffcc;
+}
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -298,70 +364,4 @@ figcaption {
   pointer-events: auto;
   opacity: 1;
   transform: translateX(0);
-}
-
-/* Dark Theme */
-body.dark {
-  background: #0b1a1a;
-  color: #e0ffff;
-  background-image: none;
-}
-
-body.dark .sidebar {
-  background-color: #102626;
-  border-right: 2px solid #00cccc;
-  box-shadow: none;
-}
-
-body.dark .sidebar a {
-  color: #ccffff;
-}
-
-body.dark .sidebar a:hover:not(.active) {
-  background-color: #1f4040;
-}
-
-body.dark .content-box {
-  background: #0f2a2a;
-  border: 2px solid #00cccc;
-  box-shadow: none;
-}
-
-body.dark h1,
-body.dark h2,
-body.dark p {
-  color: #e0ffff;
-}
-
-/* Neon Theme */
-body.neon {
-  background: black;
-  color: #00ffcc;
-  background-image: none;
-}
-
-body.neon .sidebar {
-  background-color: #000;
-  border-right: 2px solid #00ffcc;
-  box-shadow: 0 0 10px #00ffcc;
-}
-
-body.neon .sidebar a {
-  color: #00ffcc;
-}
-
-body.neon .sidebar a:hover {
-  background-color: #002222;
-}
-
-body.neon .content-box {
-  background: #001111;
-  border: 2px solid #00ffcc;
-  box-shadow: 0 0 15px rgba(0,255,204,0.3);
-}
-
-body.neon h1,
-body.neon h2,
-body.neon p {
-  color: #00ffcc;
 }
