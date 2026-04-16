@@ -364,9 +364,10 @@ figcaption {
 }
 
 details {
-  margin-bottom: 10px;
   border: 1px solid #006666;
   background: #f5ffff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
 }
 
 summary {
@@ -392,4 +393,8 @@ details[open] summary::marker {
 details p {
   margin: 0;
   padding: 8px 12px;
+}
+
+details > *:not(summary) {
+  padding: 10px 0;
 }
