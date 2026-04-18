@@ -97,6 +97,51 @@ body {
     margin:120px auto;
     text-align:center;
 }
+
+.search-box {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 8px;
+  border: 2px inset #999;
+  font-family: Tahoma;
+}
+
+.search-box button {
+  background: #e0e0e0;
+  border: 2px outset #999;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.search-box button:active {
+  border: 2px inset #999;
+}
+
+#searchResults p {
+  margin: 5px 0;
+}
+
+#searchResults a {
+  display: block;
+  padding: 8px;
+  background: #d9eeee;
+  border: 2px outset #999;
+  color: #003333;
+  text-decoration: none;
+}
+
+#searchResults a:hover {
+  background: #99B9CC;
+}
+
+#searchResults a:active {
+  border: 2px inset #999;
+}
 </style>
 <title>Welcome</title>
 </head>
@@ -113,7 +158,14 @@ body {
 <a href="/About">About</a>
 <a href="/Gallery">Gallery</a>
 <a href="/Music">Music</a>
+</div><br>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search the site...">
+  <button onclick="searchSite()">Search</button>
 </div>
+
+<div id="searchResults"></div>
 
 <div class="counter">
 Visitors: <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
@@ -154,6 +206,48 @@ document.addEventListener("click", function() {
   clickSound.currentTime = 0; // rewind so it plays every time
   clickSound.volume = 0.8;
   clickSound.play();
+});
+</script>
+
+<script>
+const pages = [
+  { title: "Blog", url: "/Blog", keywords: "blog posts updates life" },
+  { title: "Music", url: "/Music", keywords: "music songs tone generator don ellis" },
+  { title: "Gallery", url: "/Gallery", keywords: "photos images canmore band" },
+  { title: "Tone Generator", url: "/Music/Tone-Generator", keywords: "audio synth oscillator" }
+];
+
+function searchSite() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const resultsDiv = document.getElementById("searchResults");
+
+  resultsDiv.innerHTML = "";
+
+  const results = pages.filter(p =>
+    p.title.toLowerCase().includes(input) ||
+    p.keywords.includes(input)
+  );
+
+  if (results.length === 0) {
+    resultsDiv.innerHTML = "<p>No results found.</p>";
+    return;
+  }
+
+  results.forEach(r => {
+    const link = document.createElement("a");
+    link.href = r.url;
+    link.textContent = r.title;
+
+    const item = document.createElement("p");
+    item.appendChild(link);
+
+    resultsDiv.appendChild(item);
+  });
+}
+
+document.getElementById("searchInput")
+  .addEventListener("keydown", e => {
+    if (e.key === "Enter") searchSite();
 });
 </script>
 </body>
