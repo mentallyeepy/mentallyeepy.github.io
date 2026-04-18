@@ -428,18 +428,12 @@ details > *:not(summary) {
 }
 
 #searchResults a {
-  display: block;
-  padding: 8px;
-  background: #d9eeee;
-  border: 2px outset #999;
-  color: #003333;
-  text-decoration: none;
+  color: #003333;          /* matches your sidebar vibe */
+  text-decoration: none;   /* remove underline */
+  font-weight: bold;
 }
 
 #searchResults a:hover {
-  background: #99B9CC;
-}
-
-#searchResults a:active {
-  border: 2px inset #999;
+  color: #0E96C7;          /* your accent blue */
+  text-decoration: underline;
 }
