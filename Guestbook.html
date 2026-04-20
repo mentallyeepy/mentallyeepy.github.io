@@ -1,0 +1,127 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/Content/index/favicon.ico">
+<link rel="stylesheet" href="/Content/style.css">
+	
+<title>Labs</title>
+<script src="Content/dir.js" defer></script>
+</head>
+<body>
+
+<!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<!-- Side navigation -->
+{% include sidebar.html %}
+
+
+<div class="content">
+    <div class="content-box">
+        <input id="name" placeholder="Your name">
+		<input id="message" placeholder="Message">
+		<button onclick="sendMessage()">Send</button>
+		
+		<div id="messages"></div>
+        
+    	<!--Site counter-->
+		<p style="font-family: Tahoma; font-size: 12px;">
+		Visitors:
+		<span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
+		</p>
+		
+		<script>
+	    let visits = localStorage.getItem("siteVisits");
+		  
+	    if (!visits) visits = 0;
+    	visits++;
+		    
+    	localStorage.setItem("siteVisits", visits);
+		   
+		document.getElementById("counter").textContent =
+		visits.toString().padStart(6, "0");
+    </script>
+    </div>
+</div>
+	
+<!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<audio id="clickSound" src="/Content/click.wav" preload="auto"></audio>
+<script>
+const clickSound = document.getElementById("clickSound");
+
+document.addEventListener("click", function() {
+  clickSound.currentTime = 0; // rewind so it plays every time
+  clickSound.volume = 0.8;
+  clickSound.play();
+});
+</script>
+
+<script>
+function setTheme(theme) {
+  document.body.className = theme;
+  localStorage.setItem("theme", theme);
+}
+
+// load saved theme
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("theme");
+  if (saved) {
+    document.body.className = saved;
+  }
+});
+</script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDNZslTvwtT6CrLJ_qanYMHJB4elVRlRrk",
+  authDomain: "guestbook-1945c.firebaseapp.com",
+  projectId: "guestbook-1945c",
+  storageBucket: "guestbook-1945c.firebasestorage.app",
+  messagingSenderId: "178036604719",
+  appId: "1:178036604719:web:efaa18d9ce09279753ebda"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+</script>
+<script type="module">
+window.sendMessage = async function() {
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  await addDoc(collection(db, "guestbook"), {
+    name,
+    message,
+    time: Date.now()
+  });
+
+  loadMessages();
+};
+
+async function loadMessages() {
+  const querySnapshot = await getDocs(collection(db, "guestbook"));
+  const container = document.getElementById("messages");
+
+  container.innerHTML = "";
+
+  querySnapshot.forEach(doc => {
+    const data = doc.data();
+
+    const p = document.createElement("p");
+    p.textContent = `${data.name}: ${data.message}`;
+
+    container.appendChild(p);
+  });
+}
+
+loadMessages();
+</script>
+</body>
+</html>
