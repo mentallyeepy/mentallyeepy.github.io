@@ -115,7 +115,9 @@ async function loadMessages() {
     const data = doc.data();
 
     const p = document.createElement("p");
-    p.textContent = `${data.name}: ${data.message}`;
+    const time = new Date(data.time).toLocaleString();
+
+	p.textContent = `[${time}] ${data.name}: ${data.message}`;
 
     container.appendChild(p);
   });
