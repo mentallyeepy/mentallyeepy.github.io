@@ -77,7 +77,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -97,6 +97,7 @@ window.sendMessage = async function() {
   const message = document.getElementById("message").value;
 
   if (!name || !message) return;
+  if (!name.trim() || !message.trim()) return;
 
   await addDoc(collection(db, "guestbook"), {
     name,
@@ -108,19 +109,30 @@ window.sendMessage = async function() {
 };
 
 async function loadMessages() {
-  const querySnapshot = await getDocs(collection(db, "guestbook"));
-  const container = document.getElementById("messages");
+  const q = query(collection(db, "guestbook"), orderBy("time", "desc"));
+  const querySnapshot = await getDocs(q);
 
+  const container = document.getElementById("messages");
   container.innerHTML = "";
 
   querySnapshot.forEach(doc => {
     const data = doc.data();
-    const p = document.createElement("p");
+
+    const msg = document.createElement("div");
+    msg.className = "chat-message";
+
     const time = new Date(data.time).toLocaleString();
 
-    p.textContent = `[${time}] ${data.name}: ${data.message}`;
-    container.appendChild(p);
+    msg.innerHTML = `
+      <span class="chat-time">[${time}]</span>
+      <span class="chat-name">${data.name}:</span>
+      <span class="chat-text">${data.message}</span>
+    `;
+
+    container.appendChild(msg);
   });
+  document.getElementById("message").value = "";
+  container.scrollTop = 0;
 }
 
 // load on page open
