@@ -111,7 +111,7 @@ window.sendMessage = async function() {
 };
 
 async function loadMessages() {
-  const q = query(collection(db, "guestbook"), orderBy("time", "desc"));
+  const q = query(collection(db, "guestbook"), orderBy("time", "asc"));
   const querySnapshot = await getDocs(q);
 
   const container = document.getElementById("messages");
@@ -134,7 +134,7 @@ async function loadMessages() {
     container.appendChild(msg);
   });
   document.getElementById("message").value = "";
-  container.scrollTop = 0;
+  container.scrollTop = container.scrollHeight;
 }
 
 // load on page open
