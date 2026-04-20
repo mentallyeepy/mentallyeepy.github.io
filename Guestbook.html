@@ -80,7 +80,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/fireba
 import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDNZslTvwtT6CrLJ_qanYMHJB4elVRlRrk",
+  apiKey: "YOUR_API_KEY",
   authDomain: "guestbook-1945c.firebaseapp.com",
   projectId: "guestbook-1945c",
   storageBucket: "guestbook-1945c.firebasestorage.app",
@@ -90,11 +90,13 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-</script>
-<script type="module">
+
+// 👇 THIS must be attached to window so your button can call it
 window.sendMessage = async function() {
   const name = document.getElementById("name").value;
   const message = document.getElementById("message").value;
+
+  if (!name || !message) return;
 
   await addDoc(collection(db, "guestbook"), {
     name,
@@ -113,16 +115,15 @@ async function loadMessages() {
 
   querySnapshot.forEach(doc => {
     const data = doc.data();
-
     const p = document.createElement("p");
     const time = new Date(data.time).toLocaleString();
 
-	p.textContent = `[${time}] ${data.name}: ${data.message}`;
-
+    p.textContent = `[${time}] ${data.name}: ${data.message}`;
     container.appendChild(p);
   });
 }
 
+// load on page open
 loadMessages();
 </script>
 </body>
