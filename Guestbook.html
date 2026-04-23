@@ -79,10 +79,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, query, orderBy, deleteDoc, doc } 
+from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyDNZslTvwtT6CrLJ_qanYMHJB4elVRlRrk",
   authDomain: "guestbook-1945c.firebaseapp.com",
   projectId: "guestbook-1945c",
   storageBucket: "guestbook-1945c.firebasestorage.app",
@@ -93,23 +94,34 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// 👇 THIS must be attached to window so your button can call it
+// SEND MESSAGE
 window.sendMessage = async function() {
-  const name = document.getElementById("name").value;
-  const message = document.getElementById("message").value;
+  const name = document.getElementById("name").value.trim();
+  const message = document.getElementById("message").value.trim();
 
   if (!name || !message) return;
-  if (!name.trim() || !message.trim()) return;
+
+  // 🔒 block reserved name
+  if (name.toLowerCase() === "mentallyeepy") {
+    alert("That username is reserved.");
+    return;
+  }
+
+  const isAdmin = localStorage.getItem("admin") === "true" && name === "MentallyEepy";
 
   await addDoc(collection(db, "guestbook"), {
     name,
     message,
-    time: Date.now()
+    time: Date.now(),
+    admin: isAdmin
   });
+
+  document.getElementById("message").value = "";
 
   loadMessages();
 };
 
+// LOAD MESSAGES
 async function loadMessages() {
   const q = query(collection(db, "guestbook"), orderBy("time", "asc"));
   const querySnapshot = await getDocs(q);
@@ -117,8 +129,8 @@ async function loadMessages() {
   const container = document.getElementById("messages");
   container.innerHTML = "";
 
-  querySnapshot.forEach(doc => {
-    const data = doc.data();
+  querySnapshot.forEach(docSnap => {
+    const data = docSnap.data();
 
     const msg = document.createElement("div");
     msg.className = "chat-message";
@@ -131,13 +143,28 @@ async function loadMessages() {
       <span class="chat-text">${data.message}</span>
     `;
 
+    // 🗑️ delete button (ONLY for admin messages)
+    if (data.admin) {
+      const delBtn = document.createElement("button");
+      delBtn.textContent = "✖";
+      delBtn.style.marginLeft = "10px";
+
+      delBtn.onclick = async () => {
+        await deleteDoc(doc(db, "guestbook", docSnap.id));
+        loadMessages();
+      };
+
+      msg.appendChild(delBtn);
+    }
+
     container.appendChild(msg);
   });
-  document.getElementById("message").value = "";
+
+  // scroll to bottom (newest message)
   container.scrollTop = container.scrollHeight;
 }
 
-// load on page open
+// initial load
 loadMessages();
 </script>
 </body>
