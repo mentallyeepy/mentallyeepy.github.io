@@ -101,12 +101,6 @@ window.sendMessage = async function() {
 
   if (!name || !message) return;
 
-  // 🔒 block reserved name
-  if (name.toLowerCase() === "mentallyeepy") {
-    alert("That username is reserved.");
-    return;
-  }
-
  const isAdmin = localStorage.getItem("admin") === "true";
 
 // only block if NOT admin
