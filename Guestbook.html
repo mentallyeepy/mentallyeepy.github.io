@@ -107,7 +107,13 @@ window.sendMessage = async function() {
     return;
   }
 
-  const isAdmin = localStorage.getItem("admin") === "true" && name === "MentallyEepy";
+ const isAdmin = localStorage.getItem("admin") === "true";
+
+// only block if NOT admin
+if (name.toLowerCase() === "mentallyeepy" && !isAdmin) {
+  alert("That username is reserved.");
+  return;
+}
 
   await addDoc(collection(db, "guestbook"), {
     name,
