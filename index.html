@@ -161,8 +161,8 @@ body {
 </div><br>
 
 <div class="search-box">
-  <input type="text" id="searchInput" placeholder="Search the site...">
-  <button onclick="searchSite()">Search</button>
+  <input type="text" id="searchBox" placeholder="Search...">
+  <div id="results"></div>
 </div>
 
 <div id="searchResults"></div>
@@ -210,44 +210,39 @@ document.addEventListener("click", function() {
 </script>
 
 <script>
-const pages = [
-  { title: "Blog", url: "/Blog", keywords: "blog posts updates life" },
-  { title: "Music", url: "/Music", keywords: "music songs tone generator don ellis" },
-  { title: "Gallery", url: "/Gallery", keywords: "photos images canmore band" },
-  { title: "Tone Generator", url: "/Music/Tone-Generator", keywords: "audio synth oscillator" }
-];
+let pages = [];
 
-function searchSite() {
-  const input = document.getElementById("searchInput").value.toLowerCase();
-  const resultsDiv = document.getElementById("searchResults");
+// load search data
+fetch('/search.json')
+  .then(res => res.json())
+  .then(data => {
+    pages = data;
+  });
+
+// search on input
+document.getElementById("searchBox").addEventListener("input", function() {
+  const query = this.value.toLowerCase();
+  const resultsDiv = document.getElementById("results");
 
   resultsDiv.innerHTML = "";
 
-  const results = pages.filter(p =>
-    p.title.toLowerCase().includes(input) ||
-    p.keywords.includes(input)
+  if (query.length < 2) return;
+
+  const results = pages.filter(page =>
+    (page.title && page.title.toLowerCase().includes(query)) ||
+    (page.content && page.content.toLowerCase().includes(query))
   );
 
-  if (results.length === 0) {
-    resultsDiv.innerHTML = "<p>No results found.</p>";
-    return;
-  }
+  results.forEach(page => {
+    const a = document.createElement("a");
+    a.href = page.url;
+    a.textContent = page.title || page.url;
 
-  results.forEach(r => {
-    const link = document.createElement("a");
-    link.href = r.url;
-    link.textContent = r.title;
+    const div = document.createElement("div");
+    div.appendChild(a);
 
-    const item = document.createElement("p");
-    item.appendChild(link);
-
-    resultsDiv.appendChild(item);
+    resultsDiv.appendChild(div);
   });
-}
-
-document.getElementById("searchInput")
-  .addEventListener("keydown", e => {
-    if (e.key === "Enter") searchSite();
 });
 </script>
 </body>
