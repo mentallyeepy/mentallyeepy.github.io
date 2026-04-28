@@ -423,19 +423,20 @@ details > *:not(summary) {
   border: 2px inset #999;
 }
 
-#searchResults p {
-  margin: 5px 0;
+#results a {
+  color: #006666;
+  text-decoration: none;
+  font-family: Tahoma;
 }
 
-#searchResults a {
-  color: #003333;          /* matches your sidebar vibe */
-  text-decoration: none;   /* remove underline */
-  font-weight: bold;
-}
-
-#searchResults a:hover {
-  color: #0E96C7;          /* your accent blue */
+#results a:hover {
   text-decoration: underline;
+  color: #003333;
+}
+
+#results div {
+  padding: 6px;
+  border-bottom: 1px dashed #ccc;
 }
 
 /* Chat container */
