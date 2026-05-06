@@ -90,6 +90,33 @@ layout: null
             </div>
         </div>
 
+		<div class="content-box">
+		  <h1>Daily Image</h1>
+		  <img id="dailyImage" style="max-width:100%;">
+		</div>
+		<script>
+		fetch('/gallery.json')
+		  .then(res => res.json())
+		  .then(images => {
+		
+		    // get today's date (YYYY-MM-DD)
+		    const today = new Date().toISOString().slice(0, 10);
+		
+		    // simple hash from date
+		    let hash = 0;
+		    for (let i = 0; i < today.length; i++) {
+		      hash = today.charCodeAt(i) + ((hash << 5) - hash);
+		    }
+		
+		    // pick image
+		    const index = Math.abs(hash) % images.length;
+		    const selected = images[index];
+		
+		    document.getElementById("dailyImage").src = selected;
+		  });
+		</script>
+
+
         <div style="margin-top: 20px; border-top: 2px solid #006666; padding-top: 15px;">
             <button id="directoryButton" class="main-button">Site Guide</button>
             <p style="font-family: Tahoma; font-size: 12px; margin-top: 10px;">
