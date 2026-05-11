@@ -3,7 +3,12 @@
   <a href="/About" {% if page.url contains "/About" %}class="active"{% endif %}>About</a>
   <a href="/Guestbook" {% if page.url contains "/Guestbook" %}class="active"{% endif %}>Guestbook</a>
   <a href="/Blog" {% if page.url contains "/Blog" or page.url contains "/20" %}class="active"{% endif %}>Blog</a>
-  <a href="/Gallery" {% if page.url contains "/Gallery" %}class="active"{% endif %}>Gallery</a>
+  <div class="menu-item">
+    <a href="/Gallery" {% if page.url contains "/Gallery" %}class="active"{% endif %}>Gallery</a>
+    <div class="submenu">
+      <a href="/Gallery/Vic-Lewis-2025-2026" {% if page.url contains "/Gallery/Vic" %}class="active"{% endif %}>Vic Lewis 2025-2026</a>
+    </div>
+  </div>
   <div class="menu-item">
     <a href="/Music" {% if page.url contains "/Music" %}class="active"{% endif %}>Music</a>
     <div class="submenu">
