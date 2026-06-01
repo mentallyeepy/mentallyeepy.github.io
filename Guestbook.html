@@ -143,20 +143,6 @@ async function loadMessages() {
       <span class="chat-text">${data.message}</span>
     `;
 
-    // 🗑️ delete button (ONLY for admin messages)
-    if (data.admin) {
-      const delBtn = document.createElement("button");
-      delBtn.textContent = "✖";
-      delBtn.style.marginLeft = "10px";
-
-      delBtn.onclick = async () => {
-        await deleteDoc(doc(db, "guestbook", docSnap.id));
-        loadMessages();
-      };
-
-      msg.appendChild(delBtn);
-    }
-
     container.appendChild(msg);
   });
 
