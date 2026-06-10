@@ -4,18 +4,22 @@ layout: null
 
 [
 {% for page in site.pages %}
+  {% unless page.search_omit == true %}
   {
     "title": {{ page.title | jsonify }},
     "url": {{ page.url | jsonify }},
     "content": {{ page.content | strip_html | jsonify }}
   }{% unless forloop.last %},{% endunless %}
+  {% endunless %}
 {% endfor %}
 
 {% for post in site.posts %}
+  {% unless post.search_omit == true %}
   ,{
     "title": {{ post.title | jsonify }},
     "url": {{ post.url | jsonify }},
     "content": {{ post.content | strip_html | jsonify }}
   }
+  {% endunless %}
 {% endfor %}
 ]
