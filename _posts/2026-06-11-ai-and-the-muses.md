@@ -4,7 +4,7 @@ title: "AI Accuracy and the Future of Music"
 date: 2026-06-11 10:58:00 -0600
 ---
 
-⚠️ **Quick warning to regular viewers who are fans of AI:**  
+⚠️ **Quick warning to regular readers who are fans of AI:**  
 A proper serious one this is. This blog post is for an assignment about how AI can be correct and make mistakes. This is not meant to point fingers at those who use AI. Got it?
 
 ---
