@@ -88,5 +88,54 @@ Which direction would you like to explore next?
 Well, that was a doozy.\
 If you want to read the sources for this next segment, you can check them out:
 - [Source 1](https://www.sganalytics.com/blog/how-ai-is-changing-the-future-of-music-composition-and-production/): **SG Analytics - How AI is Changing Music Composition & Music Production**
-- [Source 2](https://www.mi.edu/in-the-know/ai-music-production-enhancing-human-creativity-replacing/): **Musicians Intitute - AI in Music Production: Enhancing Human Creativity or Replacing It?**
+- [Source 2](https://www.mi.edu/in-the-know/ai-music-production-enhancing-human-creativity-replacing/): **Musicians Institute - AI in Music Production: Enhancing Human Creativity or Replacing It?**
 
+After checking out what the AI said for itself, I searched on Google on the same topic and got the above sources. Here's what AI got right, oversimplified, and forgot:
+
+# What AI Got Right:
+- AI is increasingly used in music composition and production.
+- AI can generate melodies, harmonies, lyrics, and complete songs.
+- AI can assist with mixing, mastering, sound design, and editing.
+- AI raises ethical and copyright concerns.
+- AI is generally being used as a tool alongside musicians rather than completely replacing them.
+
+# What AI Oversimplified:
+- AI is becoming a co-creative partner.\
+  This isn't wrong, but really vague; it's as if everyone in the industry is using it.\
+  Here's what the sources think:
+  - Some artists embrace it
+  - Some artists hate it
+  - Many musicians are worried about copyright and originality (copilot acknowledges this but doesn't expand)
+  - There is still a major uncertainty about how AI should be used
+- AI isn't a replacement for human creativity.\
+  This is more of an opinion than a fact.
+  Source two says AI should enhance creativity rather than replace it, however many people disagree.
+  A lot of musicians are worried about:
+  - Job displacement
+  - Reduced demand for composers
+  - Synthetic voices replacing performers, for example: ACE Studio and Cantai
+
+# What AI Forgot
+- Training Data Issues\
+  Copilot mentions copyright and originality issues but doesn't expand.
+  Sources say:
+  - AI models are trained on existing music, like Drake and The Weeknd
+  - Questions exist about **artist consent**
+  - Questions exist about **compensation**
+  - Questions exist about **ownership**
+- Impact on New Artists:\
+  Source one mentions: "Many streaming platforms are integrating AI-based algorithms to deliver music to their users. This can make discovering new content overwhelming for listeners and impossible for new artists."\
+  Copilot skips this despite the fact that this is a **HUGE** industry concern.
+- Authenticity and Expression\
+  Source one talks about whether AI can really capture human emotional nuance.
+  Source two talks about formulaic and repetitive music.\
+  Copilot completely disregards this.
+
+In the end, AI is pretty neat, but users seriously have to fact-check answers, even if you're gonna use Google Gemini, which has the power of directly accessing Google search results.
+
+---
+## Reflection:
+This assignment helped me see the good and bad of AI up close. AI helped me get quick information about how AI is being used in music composition and production. It also was a good starting point for research and provided a bunch of ideas that I could explore later.
+Even after that, I also found that AI has important weaknesses. Much of the information it provided was correct, sure, but some info got oversimplified and/or lacked important context. For example, the response mentioned copyright concerns but didn't expand on that huge issue and ongoing debate on training data, artist compensation, and ownership of AI-generated music. This showed why AI information should always be verified with credible sources.
+I believe that AI can be used responsibly in school and beyond when it's used as a tool, and not as a substitute for independent thinking. It's a good way for people to brainstorm, organise info, and start research, but they still have to fact-check whatever Mr. AI says and form their own conclusions.
+What I'm excited about AI is the fact that it can assist creative work. As a musician into composing music, I think AI can be used to help musicians generate song/lyric ideas and experiment with new techniques. At the same time though, I worry about the way AI models are trained, and whether artists are properly credited or compensated for their work when it's used in AI training. This assignment has taught me that AI can be a very good resource but should always be used responsibly all the time.
