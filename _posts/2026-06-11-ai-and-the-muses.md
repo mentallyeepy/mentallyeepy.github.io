@@ -85,3 +85,8 @@ If you'd like, I can also break down:
 Which direction would you like to explore next?
 
 ---
+Well, that was a doozy.\
+If you want to read the sources for this next segment, you can check them out:
+- [Source 1](https://www.sganalytics.com/blog/how-ai-is-changing-the-future-of-music-composition-and-production/): **SG Analytics - How AI is Changing Music Composition & Music Production**
+- [Source 2](https://www.mi.edu/in-the-know/ai-music-production-enhancing-human-creativity-replacing/): **Musicians Intitute - AI in Music Production: Enhancing Human Creativity or Replacing It?**
+
