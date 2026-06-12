@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Imagination: Your Best Friend or Worst Enemy?"
-date: 2026-06-12 11:15:00 -0600
+date: 2026-06-12 11:45:00 -0600
 ---
 
 ⚠️ **Spoiler Alert, Unsupported Characters, and a Trigger Warning**  
