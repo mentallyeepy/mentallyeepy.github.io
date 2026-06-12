@@ -26,6 +26,8 @@ So, without further ado, let's get into imagination.
 ---
 ## Boy (2010, Taika Waititi)
 
+<img width="500" height="281" alt="Boy says Kia ora while standing in front of a blackboard that says 'Who Am I?', his head covering the Am." src="https://github.com/user-attachments/assets/57e0d093-c6b4-49ba-891e-a75012198ad3" />
+
 First off, let's look at the spotlight text. Taika Waititi's film Boy shows us an 11 year old Māori boy growing up in rural New Zealand who imagines that his father is basically a superhero in his eyes. When Alamein eventually returns, Boy's imagination is put to the test when his dad turns out to not be the amazing father-figure he thought he was.\
 Imagination here is what Boy uses to cope with the grief and disappointment, where he invents a better Alamein and imagines him as a person who's basically up there at Michael Jackson's rank, and retreats into this fantasy whenever reality becomes painful. These daydreams protect him emotionally and make his life feel more exciting and manageable.
 
