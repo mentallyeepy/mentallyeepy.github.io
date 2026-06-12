@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Imagination: Your Best Friend or Worst Enemy?"
-date: 2026-06-11 12:15:00 -0600
+date: 2026-06-12 12:15:00 -0600
 ---
 
-⚠️ **Spoiler Alert**  
-This post contains spoilers for multiple pieces of amazing media. I recommend checking out these media before reading this.
+⚠️ **Spoiler Alert and Unsupported Characters**  
+This post contains spoilers for multiple pieces of amazing media. I recommend checking out these media before reading this.\
+This post may also contain unsupported characters and may end up appearing as boxes.
 
 ---
 
@@ -25,4 +26,7 @@ So, without further ado, let's get into imagination.
 ---
 ## Boy (2010, Taika Waititi)
 
-First off, let's look at the spotlight text. Boy is a movie that takes place in rural New Zealand in 1984 where a kid named Boy takes care of his little brother and cousins 
+First off, let's look at the spotlight text. Taika Waititi's film Boy shows us an 11 year old Māori boy growing up in rural New Zealand who imagines that his father is basically a superhero in his eyes. When Alamein eventually returns, Boy's imagination is put to the test when his dad turns out to not be the amazing father-figure he thought he was.\
+Imagination here is what Boy uses to cope with the grief and disappointment, where he invents a better Alamein and imagines him as a person who's basically up there at Michael Jackson's rank, and retreats into this fantasy whenever reality becomes painful. These daydreams protect him emotionally and make his life feel more exciting and manageable.
+
+This movie suggests that people create fantasies when reality becomes too painful or disappointing for us to face directly. As a child dealing with grief and an absent father, Boy leans heavily on imagination to give him comfort and protect his mental health. His fantasies allow him to believe that his father is a hero instead of facing the hard truth. However, the movie also suggests that imagination can be a form of denial when it prevents someone from accepting reality. Boy's exaggerated view of Alamein stops him from growing up emotionally because it allows him to forgive his father's imperfections instead of seeing them clearly. At the end of the movie, Boy learns that to grow up one has to accept the painful but real reality but doesn't entirely give up imaginatioin. Instead, he uses it in a healthier way, like when he used it to lie to Rocky about why Alamein left just to spare his feelings. This proved that imagination and reality can coexist as long as fantasy provides hope without replacing the truth.
