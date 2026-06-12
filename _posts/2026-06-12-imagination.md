@@ -32,7 +32,7 @@ So, without further ado, let's get into imagination.
 First off, let's look at the spotlight text. Taika Waititi's film Boy shows us an 11 year old Māori boy growing up in rural New Zealand who imagines that his father is basically a superhero in his eyes. When Alamein eventually returns, Boy's imagination is put to the test when his dad turns out to not be the amazing father-figure he thought he was.\
 Imagination here is what Boy uses to cope with the grief and disappointment, where he invents a better Alamein and imagines him as a person who's basically up there at Michael Jackson's rank, and retreats into this fantasy whenever reality becomes painful. These daydreams protect him emotionally and make his life feel more exciting and manageable.
 
-This movie suggests that people create fantasies when reality becomes too painful or disappointing for us to face directly. As a child dealing with grief and an absent father, Boy leans heavily on imagination to give him comfort and protect his mental health. His fantasies allow him to believe that his father is a hero instead of facing the hard truth. However, the movie also suggests that imagination can be a form of denial when it prevents someone from accepting reality. Boy's exaggerated view of Alamein stops him from growing up emotionally because it allows him to forgive his father's imperfections instead of seeing them clearly. At the end of the movie, Boy learns that to grow up one has to accept the painful but real reality but doesn't entirely give up imaginatioin. Instead, he uses it in a healthier way, like when he used it to lie to Rocky about why Alamein left just to spare his feelings. This proved that imagination and reality can coexist as long as fantasy provides hope without replacing the truth.
+This movie suggests that people create fantasies when reality becomes too painful or disappointing for us to face directly. As a child dealing with grief and an absent father, Boy leans heavily on imagination to give him comfort and protect his mental health. His fantasies allow him to believe that his father is a hero instead of facing the hard truth. However, the movie also suggests that imagination can be a form of denial when it prevents someone from accepting reality. Boy's exaggerated view of Alamein stops him from growing up emotionally because it allows him to forgive his father's imperfections instead of seeing them clearly. At the end of the movie, Boy learns that growing up requires accepting the painful truth, but doesn't entirely give up imagination. Instead, he uses it in a healthier way, like when he used it to lie to Rocky about why Alamein left just to spare his feelings. This proved that imagination and reality can coexist as long as fantasy provides hope without replacing the truth.
 
 ---
 ## If Anything Happens I Love You (2020, Will McCormack and Michael Govier)
@@ -65,18 +65,21 @@ The series suggests that imagination can help people understand themselves and f
 ## The Secret Life of Walter Mitty (James Thurber)
 
 Walter Mitty is anything but an ordinary man, in his head. He escapes his dull boring life through daydreams where he becomes a hero surgeon, a war hero, and a genius lawyer, to name a few.\
-Imagination dominates this short story. Walter constatly retreats into his fantasies whenever reality becomes uncomfortable or boring.
+Imagination dominates this short story. Walter constantly retreats into his fantasies whenever reality becomes uncomfortable or boring.
 
-This story provides the strongest warning about imagination. It shows us that imagination can provide temporary comfort and relief, but turns into poison when it becomes a substitute for actual work in this world. Walter's fantasies prevent him from even living his own life, hiding in a chair from his wife one time. The story raises the question of whether imagination is helping someone survive reality or helping them avoid it all together.
+This story provides the strongest warning about imagination. It shows us that imagination can provide temporary comfort and relief, but turns into poison when it becomes a substitute for actual work in this world. Walter's fantasies prevent him from even living his own life, hiding in a chair from his wife one time. The story raises the question of whether imagination is helping someone survive reality or helping them avoid it altogether.
 
 ---
 ## Eraser Tattoo (Jason Reynolds)
 
 In this short story, we meet two young teenagers named Shay and Dante. Shay's family moves away due to gentrification, and Shay and Dante are torn apart. Both struggle with the emotional pain of separation.\
-Shay and Dante imagine different futures and possibilites for their relationship while taking a trip down good ol' memory lane. Their hopes and expectation shape how they deal with the uncertainty of being separated.
+Shay and Dante imagine different futures and possibilities for their relationship while taking a trip down good ol' memory lane. Their hopes and expectation shape how they deal with the uncertainty of being separated.
 
 The short story suggests that imagination can help people cope with separation and the unknown by giving them hope for the future. However, it also shows that fantasies about what may happen cannot replace reality. To grow is to accept the circumstances and yet keep the meaningful hopes and memories.
 
 ---
 
-After checking out these texts, I've come to the conclusion
+After checking out these texts, I've come to the conclusion that imagination is one of the most powerful coping tools of mankind. Whether it's boy creating stories about his father, the grieving parents in If Anything Happens I Love You holding onto memories, or the dreamers of The Marrow Thieves holding onto hope and identity, imagination helps people get through situations that can feel impossible to overcome.\
+However, like most good things, too much of it can become poisonous. Both Boy and The Secret Life of Walter Mitty suggest that fantasy can become dangerous when it becomes denying reality. Imagination can save us from pain, but it can't solve our problems alone.\
+The most surprising thing I found in this analysis was that no text completely rejected either imagiation or reality. Instead, they claim that the healthiest approach lies somewhere between the two. Imagination can offer hope, comfort, creativity, and resilience, but growth requires we embrace the truth of our circumstances. Imagination is most valuable not when it allows us to escape reality, but when it helps us find the strength to face it.\
+So, in response to my inquiry question, imagination can help people survive the hard truth through emotional protection and hope, but is harmful when it replaces reality instead of helping us understand it.
