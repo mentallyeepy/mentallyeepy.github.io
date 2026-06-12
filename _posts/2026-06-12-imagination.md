@@ -67,7 +67,7 @@ The series suggests that imagination can help people understand themselves and f
 Walter Mitty is anything but an ordinary man, in his head. He escapes his dull boring life through daydreams where he becomes a hero surgeon, a war hero, and a genius lawyer, to name a few.\
 Imagination dominates this short story. Walter constatly retreats into his fantasies whenever reality becomes uncomfortable or boring.
 
-This story provides the strongest warning about imagination. It suggests that imagination can offer temporary comfort and relief, but it becomes harmful when it replaces real-world action. Walter's fantasies prevent him from fully participating in his own life, one time hiding in a chair from his wife. The story raises the question of whether imagination is helping someone survive reality or helping them avoid it all together.
+This story provides the strongest warning about imagination. It shows us that imagination can provide temporary comfort and relief, but turns into poison when it becomes a substitute for actual work in this world. Walter's fantasies prevent him from even living his own life, hiding in a chair from his wife one time. The story raises the question of whether imagination is helping someone survive reality or helping them avoid it all together.
 
 ---
 ## Eraser Tattoo (Jason Reynolds)
@@ -79,3 +79,4 @@ The short story suggests that imagination can help people cope with separation a
 
 ---
 
+After checking out these texts, I've come to the conclusion
