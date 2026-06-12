@@ -37,6 +37,9 @@ This movie suggests that people create fantasies when reality becomes too painfu
 ---
 ## If Anything Happens I Love You (2020, Will McCormack and Michael Govier)
 
+<img width="1000" height="563" alt="Parents eating dinner at the table while their imagination, portrayed by shadows, argue with eachother." src="https://github.com/user-attachments/assets/f09df7b5-648d-4361-b247-c07a2ef12e8b" />
+
+
 This animated short tells the story of two parents trying to cope with the loss of their daughter after a devastating school shooting. As they grieve, memories of their daughter swirl around them.\
 While the film is more about memory than fantasy, imagination comes in through the daughter's lingering presence and the way the parents mentally revisit moments from her life. Their memories allow them to remember someone they've lost.
 
@@ -53,3 +56,9 @@ The novel suggests that imagination is important for human survival. Dreams give
 ---
 ## Percy Jackson and the Olympians (Rick Riordan)
 
+Percy Jackson, a snarky sixth grader, discovers that Greek Mythology is actually not myth but instead very real and that he's the son of Poseidon. He must navigate a hidden world of gods, monsters, and heroes, just to keep Olympus from falling.\
+This series transforms myths, legends, and fantasy into reality. Percy learns to embrace a world that we would consider impossible.
+
+The series suggests that imagination can help people understand themselves and find strength in adversity. Percy has a hard time at first with being different, being a son of Poseidon, but gains confidence and purpose by embracing the amazing world around him. The novels teach us that imagination can be empowering when it's based on growth rather than escape.
+
+---
