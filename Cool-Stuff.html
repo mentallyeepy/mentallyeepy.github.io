@@ -1,0 +1,93 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/Content/index/favicon.ico">
+<link rel="stylesheet" href="/Content/style.css">
+	
+<title>Cool Stuff</title>
+<script src="Content/dir.js" defer></script>
+</head>
+<body>
+
+<!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<!-- Side navigation -->
+{% include sidebar.html %}
+
+
+<div class="content">
+    <div class="content-box">
+        <h1>Cool Stuff:</h1>
+        <h2>My Socials:</h2>
+		<p>
+			<a href="https://myspace.com/mentallyeepy" target="_blank">M Y S P A C E</a> (broken)<br>
+			<a href="https://www.reddit.com/u/AnalysisShot9859/s/VGTmSCdtOz" target="_blank">R E D D I T</a><br>
+			<a href="https://open.spotify.com/user/31zpg3lowu6f62yo3l35i7rg7mrq?si=Tf0DJhD2QTiX4ogCrdL6yw&utm_source=copy-link&sci=spotify%3Acard-config%3A3rSrXCAxTFzIixgUTCZnDj" target="_blank">S P O T I F Y</a><br>
+			<a href="https://mentallyeepy.bandcamp.com" target="_blank">B A N D C A M P</a><br>
+			<a href="https://youtube.com/@eepymentally?si=dzVqzahJ5YESM1Ez" target="_blank">Y O U T U B E</a><br>
+		</p>
+		<h2>Cool Music:</h2>
+		<p>
+			<a href="https://youtu.be/nHxgCfsY2Q4?list=RDnHxgCfsY2Q4" target="_blank">Chain Reaction - Hank Levy</a><br>
+			<a href="https://youtu.be/k4TmiWQoWt8?list=RDnHxgCfsY2Q4" target="_blank">Arcturus - Don Ellis</a><br>
+			<a href="https://youtu.be/miwThEkHra8?si=n63471axOiMxqpS0" target="_blank">Strawberry Soup - Don Ellis</a><br>
+			<a href="https://youtu.be/twdaMiOUxzg?si=xt7cVwHzL35-S9bP" target="_blank">Fingerprints - Chick Corea</a><br>
+			<a href="https://youtu.be/N1d6VVN4ufo?si=CzS-vVMwYxWH9M0D" target="_blank">Holiday - Weezer</a><br>
+			<a href="https://youtu.be/PKFnUk51Nig?si=9yaIBtyRLb8i2ilL" target="_blank">...And the Mountains Rising Nowhere - Joseph Schwantner</a><br>
+			<a href="https://youtu.be/gNj94i4RYhk?si=celVeBGVxbZgBmRK" target="_blank">Er Huang - Qigang Chen</a><br>
+		</p>
+		<h2>More Cool Stuff Coming Soon</h2>
+        
+    		<!--Site counter-->
+		    <p style="font-family: Tahoma; font-size: 12px;">
+		    Visitors:
+		    <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
+		    </p>
+		
+		    <script>
+	    	let visits = localStorage.getItem("siteVisits");
+		    
+	    	if (!visits) visits = 0;
+    		visits++;
+		    
+    		localStorage.setItem("siteVisits", visits);
+		    
+		    document.getElementById("counter").textContent =
+		    visits.toString().padStart(6, "0");
+    </script>
+    </div>
+</div>
+	
+<!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<audio id="clickSound" src="/Content/click.wav" preload="auto"></audio>
+<script>
+const clickSound = document.getElementById("clickSound");
+
+document.addEventListener("click", function() {
+  clickSound.currentTime = 0; // rewind so it plays every time
+  clickSound.volume = 0.8;
+  clickSound.play();
+});
+</script>
+
+<script>
+function setTheme(theme) {
+  document.body.className = theme;
+  localStorage.setItem("theme", theme);
+}
+
+// load saved theme
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("theme");
+  if (saved) {
+    document.body.className = saved;
+  }
+});
+</script>
+</body>
+</html>
