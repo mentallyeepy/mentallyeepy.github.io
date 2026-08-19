@@ -1,0 +1,97 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/Content/index/favicon.ico">
+	
+<title>Rules</title>
+<script src="Content/dir.js" defer></script>
+{% include rss-head.html %}
+</head>
+<body background-color: #b3c4c7;>
+
+<!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<!-- Side navigation -->
+{% include sidebar.html %}
+
+
+<div class="content">
+    <div class="content-box">
+        <h1>Rules I Live By</h1>
+        <h2>Digital:</h2>
+        <ol>
+            <li>Never trust a website that needs JavaScript just to display text</li>
+            <li>Backup frequently</li>
+            <li>The best search engine is someone passionate enough about the topic</li>
+            <li>If a digital tool makes you consult Youtube to find a feature, it's either a flop or the best tool ever</li>
+        </ol>
+        
+        <h2>Creativity:</h2>
+        <ol>
+            <li>Finish one project before moving to the next</li>
+            <li>If you're stuck, change environments (computer --> paper, etc.)</li>
+            <li>Document the process, not just the final product (mistakes are interesting)</li>
+            <li>If it takes less than 2 mins, do it right now</li>
+        </ol>
+
+        <h2>Music Composition:</h2>
+        <ol>
+            <li>A great melody can be sung by a child, but a great harmony keeps an adult listening</li>
+            <li>Silence is powerful</li>
+            <li>Write for the performer, not the playback engine</li>
+            <li>Igor Stravinsky did not write Le Sacre Du Printemps in a day</li>
+        </ol>
+
+        <h2>Jazz Improv:</h2>
+        <ol>
+            <li>Repetition legitimizes</li>
+            <li>Repetition legitimizes</li>
+            <li>Repetition legitimizes</li>
+            <li>Rhythm masks note choice</li>
+            <li>Leave space for the rhythm section to reply</li>
+            <li>Never outline the root on the downbeat of a new chord</li>
+            <li>Quote a melody only if you actually respect it</li>
+        </ol>
+
+        <h2>Bassoon:</h2>
+        <ol>
+            <li>Never trust a factory-made reed straight out of the box</li>
+            <li>The whisper key is a contract, not a suggestion</li>
+            <li>Flick high A, Bb, B, and C, or suffer the consequences</li>
+            <li>If the ensemble is sharp, you're probably flat</li>
+        </ol>
+      
+    		<!--Site counter-->
+		    <p style="font-family: Tahoma; font-size: 12px;">
+		    Visitors:
+		    <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
+		    </p>
+		
+		    <script>
+	    	let visits = localStorage.getItem("siteVisits");
+		    
+	    	if (!visits) visits = 0;
+    		visits++;
+		    
+    		localStorage.setItem("siteVisits", visits);
+		    
+		    document.getElementById("counter").textContent =
+		    visits.toString().padStart(6, "0");
+    </script>
+    </div>
+</div>
+	
+<!--MentallyEepy/CodenamePixel is the owner. I am the owner, do not touch my website code, God bless, may you live long and prosper, goodbye now.-->
+
+<script>
+function setTheme(theme) {
+  document.body.className = theme;
+  localStorage.setItem("theme", theme);
+}
+</script>
+</body>
+</html>
