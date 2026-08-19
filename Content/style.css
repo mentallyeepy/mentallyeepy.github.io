@@ -1,8 +1,11 @@
 body {
   font-family: "Verdana", sans-serif;
   background-color: #5fb3c9;
-  background-image: url("/Content/index/tile.png");
+  
+  background-image: url("/Content/index/tile.png"), url("/Content/index/tile.png");
 
+  background-position: 0 0, 64px 64px;
+	
   background-repeat: repeat;
   background-size: auto;
   background-attachment: fixed;
