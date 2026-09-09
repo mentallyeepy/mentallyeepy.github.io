@@ -146,6 +146,29 @@ body {
 #searchResults a:active {
   border: 2px inset #999;
 }
+
+
+.bottom-banner-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* This perfectly centers it regardless of screen width */
+    z-index: 9999; /* Makes sure it floats on top of all other elements */
+    width: 100%;
+    max-width: 728px; /* Matches your leaderboard banner width */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bottom-banner-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 4px; /* Optional: gives the ad smooth, modern edges */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* Adds depth so it pops off your #0d4a82 background */
+    vertical-align: middle;
+}
 </style>
 <title>Welcome</title>
 {% include rss-head.html %}
@@ -174,6 +197,12 @@ body {
 Visitors: <span id="counter" style="color: #006666; font-weight: bold; background: #000; color: #00ff00; padding: 0 4px; font-family: monospace;">000000</span>
 </div>
 
+<div class="bottom-banner-container">
+    <a href="https://discord.gg/MBkzxgSqfw">
+        <img src="/Content/index/ad.gif" alt="Vocals Wanted Ad" class="bottom-banner-img">
+    </a>
+</div>
+	
 <script>
   // Wait for the window to load so it finds the element correctly
   window.onload = function() {
