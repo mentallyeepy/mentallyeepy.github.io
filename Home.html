@@ -52,35 +52,42 @@ layout: null
         </div>
 
         <div style="display: flex; gap: 20px;">
-            <!-- MAIN MUSIC SECTION -->
-            <div style="flex: 2;">
-                <h2>Feral Friday Stream</h2>
-                <iframe 
-				  src="https://www.youtube.com/embed/live_stream?channel=UCFBgnk__GTekA6DydZZUZ1g" 
-				  title="YouTube Live Stream"
-				  style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-				  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-				  allowfullscreen>
-				</iframe>
-            </div>
-			<br>
-			<div style="flex: 2;"id='furryring'>
-                <script type="text/javascript" src="https://furryring.neocities.org/onionring-variables.js"></script>
-                <script type="text/javascript" src="https://furryring.neocities.org/onionring-widget.js"></script>
-			</div>
+    <!-- LEFT COLUMN: STREAM & FURRYRING -->
+    <div style="flex: 2; display: flex; flex-direction: column; gap: 20px;">
+        <!-- MAIN MUSIC SECTION -->
+        <div>
+            <h2>Feral Friday Stream</h2>
+            <iframe 
+                src="https://www.youtube.com/embed/live_stream?channel=UCFBgnk__GTekA6DydZZUZ1g" 
+                title="YouTube Live Stream"
+                style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+             iframe>
+        </div>
+        
+        <!-- FURRYRING SECTION (Now cleanly underneath) -->
+        <div id='furryring'>
+            <script type="text/javascript" src="https://furryring.neocities.org/onionring-variables.js"></script>
+            <script type="text/javascript" src="https://furryring.neocities.org/onionring-widget.js"></script>
+        </div>
+    </div>
 
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
-            
-            <!-- BOOKWORM SIDEBAR -->
-			<div style="background: #d9eeee; border: 2px outset #ffffff; padding: 10px;">
-                <h3 style="margin-top: 0; font-size: 16px;">📚 Reading List</h3>
-                <div style="background: #fff; border: 1px inset #ccc; padding: 5px; font-size: 13px; font-family: 'Tahoma';">
-                    Currently buried in: <br>
-                    <strong>1984 - George Orwell</strong>
-                    <br><br>
-                    <em>"Just one more chapter..."</em>
-                </div>
+    <!-- RIGHT COLUMN: BOOKWORM SIDEBAR -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+        <div style="background: #d9eeee; border: 2px outset #ffffff; padding: 10px;">
+            <h3 style="margin-top: 0; font-size: 16px;">📚 Reading List</h3>
+            <div style="background: #fff; border: 1px inset #ccc; padding: 5px; font-size: 13px; font-family: 'Tahoma';">
+                Currently buried in: <br>
+                <strong>1984 - George Orwell</strong>
+                <br><br>
+                <em>"Just one more chapter..."</em>
             </div>
+        </div>
+    </div>
+</div>
+
+
 			<!-- OTHER SIDEBAR -->
 			<div style="background: #d9eeee; border: 2px outset #ffffff; padding: 10px;">
                 <h3 style="margin-top: 0; font-size: 16px;">🎵 Songs in the Works</h3>
