@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Bassoon"
+title: "How To Bassoon + Reeds"
 date: 2026-09-27 9:58:00 -0600
 ---
 
@@ -67,7 +67,7 @@ And now you've finally assembled your bassoon! You're gonna play great music, tr
 
 ---
 
-Now you may be wondering, what do all these reed names mean? What's the difference between medium soft and medium hard? What does Rieger 13 mean?
+Now you may be wondering, what do all these reed names mean? What's the difference between medium soft and medium hard? And what the hell is a convex reed?
 
 Well you've come to the right place because now I'm gonna tell you what these all mean:
 
@@ -78,6 +78,9 @@ Softness:
 * Medium-hard: Really hard to blow with even more resistance, but it also has a very rich tone. This should not be your first ever reed, as it requires a well-developed embouchure. This is great for experienced pros.
 
 Shapes:
-* Straight:
-* Mechler (convex):
-* Knochenhauer (concave):
+* Convex: These shapes have a larger surface area, which has a higher blowing resistance and give a dark, warm tone. These naturally favour low register notes making them easier to play.
+  * Examples: Mechler (the gold standard of this category), Christlieb (very wide reed popularized by bassoonist Don Christlieb)
+* Concave: These shapes have a smaller surface area, which has a lower blowing resistance and give a bright, focused tone. These naturally favour high register notes and fast articulation.
+  * Examples: Knochenhauer (a popular concave shape), Rieger 1A (arguably the most popular shape in the world)
+* Straight: This shape is a bit of a balance between convex and concave reed shapes. These rely on the width of the tip, where wider tips mimics a convex reed, while narrower tips mimic a concave reed.
+  * Examples: Fox 2 (one of North America's most famous and widely played shapes with a tiny flare at the end), Rieger 3 (a well balanced tip used for adapting to French-style playing)
