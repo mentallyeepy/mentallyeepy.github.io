@@ -10,7 +10,7 @@ The bassoon is an amazing double reed instrument which is pretty confusing to pu
 
 ## Step 1
 When you first open your case, you're gonna notice 4 parts of the instrument and 2 mandatory accessories.
-Those being the boot joint, the tenor (wing) joint, the bass joint, the bell, the seat strap, and the right hand rest.
+Those are the boot joint, the tenor (wing) joint, the bass joint, the bell, the seat strap, and the right hand rest.
 
 <img width="500" height="auto" alt="Picture of a bassoon case" src="/Content/Bassoon/DSC_0005edit.webp" />
 
@@ -57,7 +57,7 @@ The fifth thing you should do if you have a seat strap is sit down on the seat s
 Note: when using a harness or neck strap, there is a special hook just above your right thumb mechanism specifically for this situation.
 
 ## Step 6
-Now the step you've all been waiting for, attach your bocal to the tenor joint and align it so that the whisper key pad can cover it's own tone hole:
+Now the step you've all been waiting for, attach your bocal to the tenor joint and align it so that the whisper key pad can cover its own tone hole:
 
 <img width="500" height="auto" alt="Close up of bocal and tenor joint aligned properly" src="/Content/Bassoon/DSC_0017.webp" />
 
@@ -78,9 +78,11 @@ Softness:
 * Medium-hard: Really hard to blow with even more resistance, but it also has a very rich tone. This should not be your first ever reed, as it requires a well-developed embouchure. This is great for experienced pros.
 
 Shapes:
-* Convex: These shapes have a larger surface area, which has a higher blowing resistance and give a dark, warm tone. These naturally favour low register notes making them easier to play.
+* Convex: This shape has a larger surface area, which has a higher blowing resistance and give a dark, warm tone. These naturally favour low register notes making them easier to play.
   * Examples: Mechler (the gold standard of this category), Christlieb (very wide reed popularized by bassoonist Don Christlieb)
-* Concave: These shapes have a smaller surface area, which has a lower blowing resistance and give a bright, focused tone. These naturally favour high register notes and fast articulation.
+* Concave: This shape has a smaller surface area, which has a lower blowing resistance and give a bright, focused tone. These naturally favour high register notes and fast articulation.
   * Examples: Knochenhauer (a popular concave shape), Rieger 1A (arguably the most popular shape in the world)
-* Straight: This shape is a bit of a balance between convex and concave reed shapes. These rely on the width of the tip, where wider tips mimics a convex reed, while narrower tips mimic a concave reed.
+* Straight: This shape is a bit of a balance between convex and concave reed shapes. These rely on the width of the tip, where wider tips mimic a convex reed, while narrower tips mimic a concave reed.
   * Examples: Fox 2 (one of North America's most famous and widely played shapes with a tiny flare at the end), Rieger 3 (a well balanced tip used for adapting to French-style playing)
+
+Note: Reed characteristics won't always fit the characteristics of its own umbrella type. Scrape, tip thickness, cane, dimensions, and the reed maker themself will all mater too.
