@@ -61,6 +61,8 @@ Now the step you've all been waiting for, attach your bocal to the tenor joint a
 
 <img width="500" height="auto" alt="Close up of bocal and tenor joint aligned properly" src="/Content/Bassoon/DSC_0017.webp" />
 
+Note: your bocal(s) may be hidden at first, depending on your case. They should either be underneath your bass joint and bell, in an accessory compartment, or in a removable bocal compartment.
+
 **IMPORTANT**: if you haven't already, you should now soak your reed for around 2 to 3 minutes.
 
 And now you've finally assembled your bassoon! You're gonna play great music, trust me.
