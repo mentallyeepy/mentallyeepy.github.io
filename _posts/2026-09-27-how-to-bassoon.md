@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How To Bassoon + Reeds"
-date: 2026-09-27 9:58:00 -0600
+date: 2026-09-27 10:15:00 -0600
 ---
 
 The bassoon is an amazing double reed instrument which is pretty confusing to put together at first, and I'm speaking from experience. So today, I'll show you how to put together your own bassoon so that you're ready to play.
